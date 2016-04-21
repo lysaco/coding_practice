@@ -1,6 +1,7 @@
+
 body{
   margin: 0;
-  position: relative;
+  width: 100%;
 }
 
 a{
@@ -36,7 +37,7 @@ header{
   position: relative;
   width: 600px:
   min-width: 400px;
-  padding-left: 240px;
+  padding-left: 22%;
 }
 
 .logo img{
@@ -72,10 +73,14 @@ header{
 
 .nav ul li:hover{
   color: #44C0C2;
-  background-color: #F3F3F3;
+  background-color: #fefefe;
   opacity: 0.6;
   border-bottom: 3px solid #44C0C2;
+  -webkit-transition: all .1s;
+  transition: all .1s;
 }
+
+
 
 
 
@@ -98,6 +103,8 @@ header{
 }
 /*h2などの上に出る余白を消す:margin0を指定*/
 
+
+
 .learnmore{
   width: 200px;
   height: 56px;
@@ -112,10 +119,27 @@ header{
   letter-spacing: 1px;
   margin: 0 auto;
   margin-top: 110px;
+  background-color: none;
+  display: block;
 }
+
+ .learnmore:hover{
+  background-color: #ffffff;
+  color: #44C0C2;
+  opacity: 0.9;
+   -webkit-transition: all .3s;
+  transition: all .3s;
+ }
+
+
+
 
 .learnmore a{
   color: #ffffff;
+}
+
+.learnmore :hover{
+  opacity: 0.5;
 }
 
 
@@ -128,7 +152,7 @@ header{
 
 .fourstep_container{
   width: 1100px;
-  height: 460px;
+  height: 280px;
   text-align: center;
   margin: 0 auto;
 
@@ -138,7 +162,7 @@ header{
   width: 225px;
   height: 280px;
   float: left;
-  margin:0 20px;
+  margin: 0 20px;
   text-align: center;
 }
 
@@ -175,12 +199,16 @@ header{
   line-height: 27px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  display: block;
+  margin:0 auto;
 }
 
 .readmore:hover{
-  opacity: 0.6;
+  background-color: #999999;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
-
+*/
 
 /* ------ PORTFOLIO ------ */
 .portfolio{
@@ -205,29 +233,39 @@ header{
   margin-bottom: 50px;
 }
 
-.portfolio img{
-  width: 330px;
+.works img{
+  width: 230px;
   margin: 10px;
+  float: left;
 }
 
 .seeallworks{
-  width: 206px;
-  height: 56px;
+  display: block;
+  width: 200px;
+  height: 50px;
   background-color: #44C0C2;
+  border: 3px solid #44C0C2;
   border-radius: 4px;
   font-size: 20px;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-align: center;
-  line-height: 56px;
+  line-height: 50px;
   letter-spacing: 1px;
   margin: 0 auto;
 }
 
-.seeallworks a{
-  color: #ffffff;
+.seeallworks:hover{
+  background-color: #ffffff;
+  color: #44C0C2;
+  width: 200px;
+  height: 50px;
+  border: 3px solid #44C0C2;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
+
 
 /*div×divの中央寄せならmargin:0 auto;*/
 
@@ -255,9 +293,6 @@ header{
   margin-top: 80px;
 }
 
-
-
-/* ------ MEMBER ------ */
 .member{
   width: 225px;
   height: 280px;
@@ -356,7 +391,7 @@ table td{
   color: #ffffff;
 }
 
-.buy a{
+.buynow {
    display: block;
    width: 150px;
    height: 35px;
@@ -366,6 +401,13 @@ table td{
    color: #ffffff;
    font-size: 15px;
    margin: 0 auto;
+   display: block;
+}
+
+.buynow:hover{
+  background-color: #999999;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .gray a{
@@ -374,12 +416,6 @@ table td{
 
 .green a{
   background-color: #50CACC;
-}
-
-.buynow {
-  height: 20px;
-  width: 100px;
-  background-color: #485460;
 }
 
 
@@ -398,7 +434,7 @@ table td{
   padding-top: 50px;
 }
 
-.voice h3{
+.voice_container h3{
   line-height: 1.5em;
   font-size: 38px;
   font-family: 'Open Sans', sans-serif;
@@ -494,7 +530,9 @@ form{
 }
 
 .sns :hover{
-  opacity: 0.8;
+  opacity: 0.7;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 input {
@@ -579,6 +617,14 @@ textarea::-moz-placeholder{
   line-height: 44px;
   float: right;
   margin-top: 30px;
+  display: block;
+}
+
+
+.send:hover{
+  background-color: #999999;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .meta{
@@ -613,24 +659,19 @@ textarea::-moz-placeholder{
 
 
 
-
 /* ---------------------------
               MOBILE
   ---------------------------*/
-@media screen and (max-width: 480px){
-body{
 
-}
-
-
-.nav{
+@media screen and (max-width: 1010px){
+  .nav{
   display: none;
 }
 
 .mobile-nav{
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
   cursor: pointer;
 }
 
@@ -646,7 +687,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #;
+  background-color: #44C0C2;
   height: 4px;
   width: 100%;
 }
@@ -668,9 +709,161 @@ body{
   top: 30px;
 }
 
-/*membere*/
-.member{
-  float: none;
+}
+
+
+@media screen and (max-width: 480px){
+
+/* ------ MOBILE HEADER ------ */
+
+
+/* ------ MOBILE FOURSTEP ------ */
+
+
+.fourstep_container{
+  width: 300px;
+  height: 300px;
+}
+
+.step{
+  clear: left;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.step img{
+  margin-left: 60px;
+}
+
+
+
+/* ------ MOBILE PORTFOLIO ------ */
+.portfolio{
+  height: 540px;
+}
+
+.portfolio h3{
+  font-size: 30px;
+}
+
+.works{
+  width: 300px;
+  height: 270px;
+  margin-bottom: 10px;
+}
+
+.works img{
+  width: 100px;
+}
+
+.seeallworks{
+  width: 150px;
+  height: 46px;
+  font-size: 17px;
+  line-height: 46px;
+  margin-top: 60px;
+}
+
+
+/* ------ MOBILE TEAM ------ */
+.team{
+  height: 580px;
+}
+
+.team_container{
+  margin-top: 40px;
+  width: 300px;
+  height: 380px;
+}
+
+.team h3{
+  font-size: 30px;
+}
+
+
+
+/* ------ MOBILE PLAN ------ */
+.plan_container{
+  width: 330px;
+  position: initial;
+
+}
+
+table{
+  width: 300px;
+}
+
+
+/* ------ MOBILE VOICE ------ */
+.voice_container{
+  width: 280px;
+  padding-top: 25px;
+}
+
+.voice_container h3{
+  line-height: 1.5em;
+  font-size: 30px;
+}
+
+
+/* ------ MOBILE CONTACT ------ */
+.contact{
+  height: 950px;
+}
+
+.contact h3{
+  font-size: 30px;
+}
+
+.contact-left, .contact-right{
+  width: 100%;
+  height: 300px;
+  clear: left;
+  margin-top: 30px;
+}
+
+.contact-left_container{
+  width: 300px;
+}
+
+form{
+  width: 280px;
+  margin: 0 auto;
+}
+
+.input{
+  width: 200px;
+  margin: 0 auto;
+}
+
+input{
+  margin: 20px 0 ;
+}
+
+input.input_name{
+  margin-right: 0px;
+}
+
+textarea{
+  width: 280px;
+  margin-top: 20px;
+}
+
+.send{
+  margin-top: 20px;
+}
+
+.send:hover{
+  display: none;
+}
+
+
+.send{
+  margin-top: 30px;
+  width: 150px;
+  height: 46px;
+  font-size: 17px;
+  line-height: 46px;
 }
 
 }

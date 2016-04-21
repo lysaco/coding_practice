@@ -12,86 +12,78 @@
   <link rel="stylesheet" type="text/css" href="slick-1.5.9/slick/slick.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="slick-1.5.9/slick/slick-theme.css" media="screen" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script src="slick-1.5.9/slick/slick.min.js"></script>
 </head>
 <body>
 
 
 <!--     HEADER     -->
   <header class="header">
-  <div class="header-left">
-    <div class="logo">
-      <img src="image/logo.png" rel=="logo">
-      <img src="image/logo.png" rel=="logo">
-    </div>
-  </div>
-  <div class="header-right">
-    <div class="nav">
-      <ul>
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>Service</li></a>
-        <a href="#"><li>Portfolio</li></a>
-        <a href="#"><li>Team</li></a>
-        <a href="#"><li>Blog</li></a>
-        <a href="#"><li>Contact</li></a>
-      </ul>
-    </div>
-    <div class="mobile-nav">
-      <div>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="header-left">
+      <div class="logo">
+        <img src="image/logo.png" rel=="logo">
+        <img src="image/logo.png" rel=="logo">
       </div>
     </div>
-  </div>
+    <div class="header-right">
+      <div class="nav">
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>Service</li></a>
+          <a href="#"><li>Portfolio</li></a>
+          <a href="#"><li>Team</li></a>
+          <a href="#"><li>Blog</li></a>
+          <a href="#"><li>Contact</li></a>
+        </ul>
+      </div>
+      <div class="mobile-nav">
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
   </header>
 
 
 <!--     TOP     -->
-  <ul class="top slider">
-    <li class="">
+  <div class="top">
+    <div class="">
       <p class="top_message">This is a main heading</p>
-      <div class="learnmore"><a href="#" target="_blank">Learn More</a></div>
-    </li>
-    <li class="">
-      <p class="top_message">This is a main heading</p>
-      <div class="learnmore"><a href="#" target="_blank">Learn More</a></div>
-    </li>
-  </ul>
+      <a class="learnmore" href="#" target="_blank">Learn More</a>
+    </div>
+  </div>
 
 
-<!--     FOUR STEP     -->
+<!--     FOURSTEP     -->
   <div class="fourstep">
     <div class="fourstep_container">
-      <div class="">
         <div class="step">
           <img src="image/step1.png">
           <h3>Custom Designs</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
-          <a href=""><div class="readmore">Read More</div></a>
+          <a class="readmore" href="">Read More</a>
         </div>
         <div class="step">
           <img src="image/step2.png">
           <h3>Web Design</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
-          <a href=""><div class="readmore">Read More</div></a>
+          <a class="readmore" href="">Read More</a>
         </div>
-      </div>
-      <div classz="">
         <div class="step">
           <img src="image/step3.png">
           <h3>Blog Pages</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
-          <a href="#"><div class="readmore">Read More</div></a>
+          <a class="readmore" href="#">Read More</a>
         </div>
         <div class="step">
           <img src="image/step4.png">
           <h3>Mobile fiendly</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
-          <a href="#"><div class="readmore">Read More</div></a>
+          <a class="readmore" href="#">Read More</a>
         </div>
-    </div>
     </div>
   </div>
 
@@ -100,14 +92,14 @@
   <div class="portfolio">
     <h3>Portfolio</h3>
     <div class="works">
-      <img src="image/work_1.png">
-      <img src="image/work_2.png">
-      <img src="image/work_3.png">
-      <img src="image/work_4.png">
-      <img src="image/work_5.png">
-      <img src="image/work_6.png">
+      <div><img src="image/work_1.png"></div>
+      <div><img src="image/work_2.png"></div>
+      <div><img src="image/work_3.png"></div>
+      <div><img src="image/work_4.png"></div>
+      <div><img src="image/work_5.png"></div>
+      <div><img src="image/work_6.png"></div>
     </div>
-    <div class="seeallworks"><a href="#">See all works</a></div>
+    <a class="seeallworks" href="#">See all works</a>
   </div>
 
 
@@ -142,7 +134,7 @@
 <!--     PLAN     -->
   <div class="plan">
     <div class="plan_container">
-      <table class="plan_table">
+      <div><table>
         <tr>
           <th class="basic">Basic</th>
         </tr>
@@ -168,11 +160,11 @@
           <td>Prnare nisi pretium</td>
         </tr>
         <tr>
-          <td class="buy gray"><a href="#">Buy now</a>
+          <td class="buy gray"><a class="buynow" href="#">Buy now</a>
           </td>
         </tr>
-      </table>
-      <table class="plan_table">
+      </table></div>
+      <div><table>
         <tr>
           <th class="pro">Pro</th>
         </tr>
@@ -198,10 +190,10 @@
           <td>Prnare nisi pretium</td>
         </tr>
         <tr>
-        <td class="buy green"><a href="#">Buy now</a></td>
+        <td class="buy green"><a class="buynow" href="#">Buy now</a></td>
         </tr>
-      </table>
-      <table class="plan_table">
+      </table></div>
+      <div><table>
         <tr>
           <th class="premium">Premium</th>
         </tr>
@@ -228,10 +220,10 @@
         </tr>
         <tr>
           <td class="buy gray">
-            <a href="#">Buy now</a>
+            <a class="buynow" href="#">Buy now</a>
           </td>
         </tr>
-      </table>
+      </table></div>
     </div>
   </div>
 
@@ -269,7 +261,7 @@
           <input class="input_mail" type="mail" placeholder="Email">
         </div>
         <textarea class="input_message" type="message" placeholder="Message"></textarea>
-        <div class="send">Send</div></div>
+        <a class="send" href="#">Send</a></div>
       </form>
   </footer>
 </body>
